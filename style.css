@@ -297,11 +297,36 @@ footer {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 20px;      /* change size if you want */
+  width: 20px;
   height: 20px;
   transform: translate(-50%, -50%);
-  background: transparent;
-  border: none;
+
+  /* True invisibility */
+  background: none !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+
+  /* Remove all browser styling */
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+
+  /* No content, no text, nothing */
+  padding: 0 !important;
+  margin: 0 !important;
+  color: transparent !important;
+  font-size: 0 !important;
+
+  /* No hover/focus flash */
   cursor: pointer;
-  padding: 0;
+}
+
+.invisible-btn:focus,
+.invisible-btn:hover,
+.invisible-btn:active {
+  outline: none !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
