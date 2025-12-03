@@ -287,3 +287,21 @@ footer {
 #invisible {
   opacity:0;
 }
+
+.img-button-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.invisible-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;      /* change size if you want */
+  height: 20px;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
