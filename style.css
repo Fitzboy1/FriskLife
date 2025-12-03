@@ -330,3 +330,9 @@ footer {
   border: none !important;
   box-shadow: none !important;
 }
+
+.invisible-btn::before,
+.invisible-btn::after {
+  content: "" !important;
+  display: none !important;
+}
